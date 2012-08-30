@@ -3,13 +3,16 @@ verbose = 1
 dataSource = instagram
 
 [source]
-client = 639a200e52b1490aa475ad447e3f0826
-secret = 99c4f7d5c2024cf58c53ea6cfaef3592
+# EDIT THIS - put your client and secret key from instagram in here
+client = <put your client key here>
+secret = <put your secret key here>
 
 # Leave sections in <> alone in this config - these will be populated by the code.
 geoUrl = https://api.instagram.com/v1/geographies/<geo-id>/media/recent?client_id=<client-id>
 tagUrl = https://api.instagram.com/v1/tags/<tag>/media/recent?client_id=<client-id>
-subBaseUrl = http://igram-redsquirrel.dotcloud.com/realtime_callback
+
+# EDIT THIS - put your callback url in here
+subBaseUrl = <http://yourcallbackurl.com/realtime_callback>
 
 [messageBroker]
 jmsDest = /queue/instagram
